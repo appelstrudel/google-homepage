@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- TODO: put everything in a css grid, center the grid, and put the img and the search in three seperate rows-->
+<style>
+    .sronly {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        top: auto;
+        overflow: hidden;
+    }
+    .divcontainer {
+        text-align: center;
+        text-justify: center;
+    }
+    .red {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+  
+</style>
+<html>
+<head>
+    <title>Google</title>
+</head>
+<body>
+    <div class="divcontainer">
+    <div>
+        <img src="google.png" width="272" height="92" alt="Google logo">
+    </div>
+    </div>
+    
+    <div class="divcontainer">
+    <div>
+        <form>
+            <label for="question" class="sronly">Search:</label>
+            <input type="text" id="question" placeholder="Enter your question" name="Enter your question">
+        </form>
+    </div>
+    </div>
+
+    <div class="divcontainer">
+    <div class="red">
+        <p>hallo</p>
+    </div>
+    </div>
+</body>
+</html>
