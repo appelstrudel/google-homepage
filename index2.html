@@ -2,12 +2,13 @@
 <style>
 header {
     width: auto;
+    height: 100px;
     top: 0;
     left: 0;
     margin: 0;
     padding: 0;
-    background-color: thistle;
     text-align: right;
+    padding-right: 10%;
 }
 
 .headerbutton {
@@ -26,6 +27,67 @@ header {
     vertical-align: middle;
 }
 
+main {
+    text-align: center;
+    
+}
+
+main img {
+    padding-bottom: 20px;
+}
+
+main form {
+    padding-bottom: 20px;
+}
+
+main input {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+main button {
+    margin-bottom: 20px;
+}
+
+.sronly {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    overflow: hidden;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 79vw;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.hrefspace {
+    margin-right: 10px;
+}
+
+.left {
+    justify-items: left;
+    display: inline-block;
+}
+
+.right {
+    justify-items: right;
+    display: inline-block;
+}
+
+footer::after {
+    content:"";
+    display: inline-block;
+    width: 100%;
+}
 
 
 </style>
@@ -47,15 +109,17 @@ header {
             <button>Google Search</button>
             <button>I'm feeling lucky</button>
         </main>
+        <div class="footercontainer">
         <footer>
-            <div>
-                <a href="https://www.google.com">Advertising</a>
+            <div class="left">
+                <a href="https://www.google.com" class="hrefspace">Advertising</a>
                 <a href="https://www.google.com">Business</a>
             </div>
-            <div>
-                <a href="https://www.google.com">Privacy</a>
+            <div class="right">
+                <a href="https://www.google.com" class="hrefspace">Privacy</a>
                 <a href="https://www.google.com">Terms</a>
             </div>
         </footer>
+        </div>
     </body>
 </html>
