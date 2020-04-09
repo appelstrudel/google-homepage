@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- TODO: put everything in a css grid, center the grid, and put the img and the search in three seperate rows-->
+<style>
+    .sronly {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        top: auto;
+        overflow: hidden;
+    }
+    .divcontainer {
+        text-align: center;
+        text-justify: center;
+        margin: 20px;
+    }
+  
+  #container {
+      display: grid;
+      grid-template: "nav" 
+      "header"
+      "main"
+      "footer"
+  }
+
+nav {
+    width: auto;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    justify-self: right;
+}
+
+.bnav {
+    background-color: teal;
+    height: 40px;
+    width: 60px;
+    border: none;
+    vertical-align: middle;
+}
+
+.bpic {
+    background-color: white;
+    height: 40px;
+    width: 60px;
+    border: none;
+    vertical-align: middle;
+}
+
+
+  .bfooter {
+      background-color: rgb(236, 236, 236);
+      color: rgb(56, 56, 56);
+      border-radius: 5px;
+      border-color: white;
+      width: 150px;
+      height: 40px;
+  }
+
+  input {
+      min-width: 200px;
+      width: 30%;
+      border-radius: 50px;
+      padding: 5px;
+      box-shadow: none;
+      text-shadow: none;
+  }
+
+  header {
+      width: 1rf;
+
+  }
+
+</style>
+<html>
+<head>
+    <title>Google</title>
+</head>
+<body>
+
+<div id="container">
+
+    <nav>
+        <button class="bnav">Home</button>
+        <button class="bpic"><img src="apps.png" width="40px" height="40px" alt="apps menu"></button>
+    </nav>
+
+    <header class="divcontainer">
+        <div>
+            <img src="google.png" width="272" height="92" alt="Google logo">
+        </div>
+    </header>
+    
+    <main class="divcontainer">
+        <div>
+            <form>
+                <label for="question" class="sronly">Search:</label>
+                <input type="text" id="question" placeholder="Enter your question" name="Enter your question">
+            </form>
+        </div>
+    </main>
+
+    <footer class="divcontainer">
+        <div>
+            <button class="bfooter">Google Search</button>
+            <button class="bfooter">I'm feeling lucky</button>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
